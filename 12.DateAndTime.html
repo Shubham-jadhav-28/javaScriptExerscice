@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DateAndTime</title>
+  </head>
+  <body>
+    <!-- Date Objects -->
+    <!--1.new Date() 
+        2.new Date(milliseconds)  
+        3. new Date(Date string) 
+        4. new Date(year,month, day, hours, minutes, seconds, milliseconds) -->
+    <script>
+      const timeNow = new Date();
+      console.log(timeNow);
+
+      const time = new Date(1000000);
+      console.log(time);
+
+      const date = new Date("07-03-2025");
+      console.log(date);
+
+      const datedaytime = new Date(2025, 3, 7, 12, 3, 0);
+      console.log(datedaytime);
+    </script>
+  </body>
+</html>

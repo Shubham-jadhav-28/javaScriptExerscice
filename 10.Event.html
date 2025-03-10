@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <style>
+      #Hover {
+        width: 600px;
+        height: 200px;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="btn">click me</button>
+
+    <select id="mySelect">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+    </select>
+
+    <div id="Hover">Hover Me</div>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+
+      document
+        .getElementById("mySelect")
+        .addEventListener("change", function () {
+          alert("You selected: " + this.value);
+        });
+
+      const Hover = document.getElementById("Hover");
+
+      function handleMouseover() {
+        Hover.style.backgroundColor = "lightcoral";
+      }
+
+      Hover.addEventListener("mouseover", handleMouseover);
+
+      function handleMouseout() {
+        Hover.style.backgroundColor = "lightblue";
+      }
+
+      Hover.addEventListener("mouseout", handleMouseout);
+    </script>
+  </body>
+</html>

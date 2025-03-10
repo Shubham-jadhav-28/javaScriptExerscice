@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeConversion</title>
+  </head>
+  <body>
+    <script>
+      // implicit Type Conversion
+      console.log("5" + 2);
+      console.log("10" - 2);
+      console.log("5" * 2);
+      console.log("10" / "2");
+
+      //   Explicit Type Conversion
+
+      let num = 42;
+      console.log(String(num));
+      console.log(Number("123"));
+
+      let result;
+      result = Number("5");
+      console.log(result, "-", typeof result);
+      result = String(true);
+      console.log(result, "-", typeof result);
+      result = Boolean(0);
+      console.log(result, "-", typeof result);
+    </script>
+  </body>
+</html>

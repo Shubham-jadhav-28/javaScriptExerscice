@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+  <body>
+    <script>
+      if (true) {
+        console.log("Hello");
+      } else {
+        console.log("else");
+      }
+
+      const age = 18;
+      if (age >= 19) {
+        console.log("You can drive");
+        console.log("Congrats");
+      } else if (age >= 14) {
+        console.log("Almost Drive");
+      } else {
+        console.log("You can not Dreive");
+      }
+
+      const a = 15 >= 16 || 15 >= 19 ? "You can drive" : "You can not Drive";
+      console.log(a);
+
+      let day = parseInt(prompt("Enter Number:"));
+      switch (day) {
+        case 1:
+          console.log("Sunday");
+          break;
+
+        case 2:
+          console.log("Monday");
+          break;
+
+        case 3:
+          console.log("Tuesday");
+          break;
+
+        case 4:
+          console.log("Wednesday");
+          break;
+
+        case 5:
+          console.log("Thursday");
+          break;
+
+        case 6:
+          console.log("Friday");
+          break;
+
+        case 7:
+          console.log("Saturday");
+          break;
+
+        default:
+          console.log("Invalid Day");
+      }
+    </script>
+  </body>
+</html>

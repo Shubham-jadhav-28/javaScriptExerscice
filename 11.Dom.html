@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+
+    <style>
+      .btn {
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+      .is-subscribed {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p>You Tube Subscribe Button</p>
+    <button onclick="Subscribe()" class="btn">Subscribe</button>
+
+    <div id="main">
+      <p>Finding HTML Elements by Tag Name</p>
+      <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+      function Subscribe() {
+        const ButtonElement = document.querySelector(".btn");
+        if (ButtonElement.innerText === "Subscribe") {
+          ButtonElement.innerHTML = "Subscibed";
+          ButtonElement.classList.add("is-subscribed");
+        } else {
+          ButtonElement.innerHTML = "Subscribe";
+          ButtonElement.classList.remove("is-subscribed");
+        }
+      }
+
+      const x = document.getElementById("main");
+      const y = x.getElementsByTagName("p");
+
+      document.getElementById("demo").innerHTML =
+        'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+    </script>
+  </body>
+</html>

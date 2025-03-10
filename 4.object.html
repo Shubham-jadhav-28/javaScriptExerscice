@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        firstName: "Jhon",
+        LastName: "Doe",
+      };
+      console.log(person);
+
+      console.log(person.firstName);
+      console.log(person.LastName);
+
+      let adress = {
+        "Building no": 12334,
+        street: "North 1st street",
+        state: "CA",
+        country: "USA",
+      };
+      console.log(adress);
+      console.log(adress["Building no"]);
+      adress.country = "india";
+      console.log(adress);
+      delete adress.country;
+      console.log(adress);
+
+      console.log("Hello".length);
+      console.log("Hello".toUpperCase());
+    </script>
+  </body>
+</html>
