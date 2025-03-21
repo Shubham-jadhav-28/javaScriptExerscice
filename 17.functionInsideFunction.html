@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <!-- function inside function     -->
+    <script>
+      function app() {
+        const myFunc = () => {
+          console.log("Hello from myFunc");
+        };
+        const addTow = (num1, num2) => {
+          return num1 + num2;
+        };
+        const mul = (num1, num2) => num1 * num2;
+        myFunc();
+        console.log(addTow(2, 3));
+        console.log(mul(2, 3));
+      }
+      app();
+    </script>
+  </body>
+</html>
